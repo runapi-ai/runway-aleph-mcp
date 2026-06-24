@@ -1,0 +1,34 @@
+{
+  "catalog_models": [
+    "runway-aleph"
+  ],
+  "actions": {
+    "runway-aleph/edit-video": {
+      "model": "Runway Aleph",
+      "endpoint": "edit_video",
+      "models": [
+        "runway-aleph"
+      ],
+      "fields_by_model": {
+        "runway-aleph": {
+          "prompt": {
+            "required": true
+          },
+          "aspect_ratio": {
+            "enum": [
+              "16:9",
+              "9:16",
+              "4:3",
+              "3:4",
+              "1:1",
+              "21:9"
+            ]
+          },
+          "source_video_url": {
+            "required": true
+          }
+        }
+      }
+    }
+  }
+}

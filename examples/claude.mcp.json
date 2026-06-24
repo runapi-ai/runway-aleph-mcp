@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "runway-aleph": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@runapi.ai/runway-aleph-mcp"
+      ],
+      "env": {
+        "RUNAPI_API_KEY": "${RUNAPI_API_KEY}"
+      }
+    }
+  }
+}
