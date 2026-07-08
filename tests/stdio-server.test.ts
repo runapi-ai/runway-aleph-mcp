@@ -45,7 +45,7 @@ describe("runway-aleph stdio MCP server", () => {
 
     const tools = await client.listTools();
     const names = tools.tools.map((tool) => tool.name).sort();
-    expect(names).toEqual(["check_pricing","edit_video","get_task"]);
+    expect(names).toEqual(["check_pricing","edit_video","get_task","login"]);
 
     const pricing = await client.callTool({ name: "check_pricing", arguments: {} });
     const content = pricing.content?.[0];
