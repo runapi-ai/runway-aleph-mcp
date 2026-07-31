@@ -6,15 +6,31 @@
     "runway-aleph/edit-video": {
       "model": "Runway Aleph",
       "endpoint": "edit_video",
+      "task_type": "asynchronous",
       "models": [
         "runway-aleph"
       ],
       "fields_by_model": {
         "runway-aleph": {
+          "model": {
+            "type": "string"
+          },
           "prompt": {
+            "type": "string",
             "required": true
           },
+          "source_video_url": {
+            "type": "string",
+            "required": true
+          },
+          "callback_url": {
+            "type": "string"
+          },
+          "watermark": {
+            "type": "string"
+          },
           "aspect_ratio": {
+            "type": "string",
             "enum": [
               "16:9",
               "9:16",
@@ -24,8 +40,11 @@
               "21:9"
             ]
           },
-          "source_video_url": {
-            "required": true
+          "seed": {
+            "type": "integer"
+          },
+          "reference_image_url": {
+            "type": "string"
           }
         }
       }
