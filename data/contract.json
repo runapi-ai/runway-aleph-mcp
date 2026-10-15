@@ -1,53 +1,15 @@
 {
-  "catalog_models": [
-    "runway-aleph"
-  ],
-  "actions": {
-    "runway-aleph/edit-video": {
-      "model": "Runway Aleph",
-      "endpoint": "edit_video",
-      "task_type": "asynchronous",
-      "models": [
-        "runway-aleph"
-      ],
-      "fields_by_model": {
-        "runway-aleph": {
-          "model": {
-            "type": "string"
-          },
-          "prompt": {
-            "type": "string",
-            "required": true
-          },
-          "source_video_url": {
-            "type": "string",
-            "required": true
-          },
-          "callback_url": {
-            "type": "string"
-          },
-          "watermark": {
-            "type": "string"
-          },
-          "aspect_ratio": {
-            "type": "string",
-            "enum": [
-              "16:9",
-              "9:16",
-              "4:3",
-              "3:4",
-              "1:1",
-              "21:9"
-            ]
-          },
-          "seed": {
-            "type": "integer"
-          },
-          "reference_image_url": {
-            "type": "string"
-          }
+  "catalog_models": [],
+  "actions": {},
+  "retired_models": {
+    "runway-aleph": {
+      "provider": "Runway",
+      "versions": [
+        {
+          "id": "runway-aleph",
+          "retired_at": "2026-10-11T00:00:00Z"
         }
-      }
+      ]
     }
   }
 }
